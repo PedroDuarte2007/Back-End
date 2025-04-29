@@ -1,0 +1,251 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1741711318569
+  modified: 1741711318569
+collection:
+  - name: Snoopy Delivery
+    meta:
+      id: fld_646e55fb66fd4a88887fe9a56d0da54b
+      created: 1744739153458
+      modified: 1744739153458
+      sortKey: -1744739153458
+    children:
+      - name: Motorista
+        meta:
+          id: fld_b3d8b4cc7c34430598915f64419279b0
+          created: 1744739159413
+          modified: 1744739204446
+          sortKey: -1744739203440
+        children:
+          - url: http://localhost:3001/motoristas
+            name: CREATE
+            meta:
+              id: req_a6c0a4e36c1343e88ddcd0e07aa14a61
+              created: 1744739183321
+              modified: 1744745679253
+              isPrivate: false
+              sortKey: -1744739185956
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                	{
+                		"email": "lois@gmail.com",
+                		"nome": "Jorge Lois",
+                		"telefones": "19971348210"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/motoristas/6
+            name: DELETE
+            meta:
+              id: req_c562a0ccf030412096881fd249149d35
+              created: 1744739183467
+              modified: 1744741266145
+              isPrivate: false
+              sortKey: -1744739185856
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/motoristas/1
+            name: UPDATE
+            meta:
+              id: req_000e9248972f419cb9972a6f36085288
+              created: 1744739183611
+              modified: 1744741050937
+              isPrivate: false
+              sortKey: -1744739185906
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                	{
+                		"email": "pedro@gmail.com",
+                		"nome": "Pedro Duarte",
+                		"telefones": "19971348235"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/motoristas
+            name: GET
+            meta:
+              id: req_060800d7b00146bea27d32fce7f50c4a
+              created: 1744739183755
+              modified: 1744745835357
+              isPrivate: false
+              sortKey: -1744739186056
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pedidos
+        meta:
+          id: fld_cae782ab1691409287964ad7b4b4e001
+          created: 1744739166537
+          modified: 1744739203368
+          sortKey: -1744739203340
+        children:
+          - url: http://localhost:3001/pedidos/7
+            name: DELETE
+            meta:
+              id: req_8e65a7f4b59046f38350dac94b233f8e
+              created: 1744739169381
+              modified: 1744744345387
+              isPrivate: false
+              sortKey: -1744739171864
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/pedidos
+            name: GET
+            meta:
+              id: req_ca43dd0ab15f428f9f2f717f5e0a6d4a
+              created: 1744739169546
+              modified: 1744745816665
+              isPrivate: false
+              sortKey: -1744739172064
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/pedidos/7
+            name: UPDATE
+            meta:
+              id: req_0873dd63c7b54832b9f0cc2d9650883c
+              created: 1744739169704
+              modified: 1744742681502
+              isPrivate: false
+              sortKey: -1744739171964
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"motoristaId": 5,
+                	"data": "2025-04-03T00:00:00.000Z",
+                	"produto": "Pudim de Leite com Morango",
+                	"valor": "9700",
+                	"endereco": "Rua Doces",
+                	"numero": "193",
+                	"cep": "13917-001",
+                	"complemento": null
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3001/pedidos
+            name: CREATE
+            meta:
+              id: req_b8695da72ca54a3eac0731e85a9aa1c8
+              created: 1744739169834
+              modified: 1744742619845
+              isPrivate: false
+              sortKey: -1744739172014
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"motoristaId": 5,
+                	"data": "2025-04-03T00:00:00.000Z",
+                	"produto": "Pudim de Leite",
+                	"valor": "9700",
+                	"endereco": "Rua Doces",
+                	"numero": "193",
+                	"cep": "13917-001",
+                	"complemento": null
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742910445572
+    modified: 1742910445572
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742910445568
+    modified: 1742910445568
+    isPrivate: false
